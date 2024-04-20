@@ -3,26 +3,196 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio website</title>
+  <title>WEB 2890 - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
+  <meta name="portfolio" content="">
 
   <link rel="stylesheet" href="./stylesheets/main.scss">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Inter:wght@300&family=Rubik+Mono+One&family=Saira:ital,wght@1,200;1,500;1,600;1,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module" src="./javascripts/main.js"></script>
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+ <!--NAV-->
+ <header class="sticky-top">
+  <nav class="navbar navbar-light navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-inline-flex text-uppercase" href="/src/images/">Brett Asay Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="material-icons icon-2x" aria-hidden="true">menu</i>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-  <script type="module" src="./javascripts/main.js"></script>
+  <main id="main">
+    <!-- Header -->
+    <div class="container py-5 py-lg-6">
+      <div class="col-lg-10 col-xxl-8">
+        <h1 class="display-3">Projects</h1>
+        <div class="border border-bottom border-5 border-light w-50 mb-2"></div>
+        <p class="lead text-light">We design strategies to appeal to your audience.</p>
+      </div>
+    </div>
+  
+    <!-- Projects -->
+
+    <!--Etch Photo-->
+    <div class="container mb-4">
+      <div class="row justify-content-lg-between align-items-center gy-4 pb-5 pb-lg-6">
+        <div class="col-lg-6">
+          <a class="d-inline-block" href="etch.html">
+            <figure class="img-overlay mb-0">
+              <img src="images/etch-photo-land.png" alt="Architecture landing page" class="img-thumbnail" width="800" height="550">
+              <div class="img-hover">
+                <div class="img-text display-5">View Project</div>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="fw-normal display-5">Etch Photo</h2>
+          <p class="fw-light text-light">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+        </div>
+      </div>
+
+      <!--Corvette Recycling-->
+      <div class="row justify-content-lg-between align-items-center gy-4 pb-5 pb-lg-6">
+        <div class="col-lg-6 order-lg-2">
+          <a class="d-inline-block" href="corvette.html">
+            <figure class="img-overlay mb-0">
+              <img src="images/cr-landing.png" alt="Interior Design landing page" class="img-thumbnail" width="800" height="550">
+              <div class="img-hover">
+                <p class="img-text display-5">View Project</p>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <div class="col-lg-5 order-lg-1">
+          <h2 class="fw-normal display-5">Corvette Recycling</h2>
+          <p class="fw-light text-light">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    
+          </p>
+        </div>
+      </div>
+
+      <!--Dogma Films-->
+      <div class="row justify-content-lg-between align-items-center gy-4 pb-5 pb-lg-6">
+        <div class="col-lg-6">
+          <a class="d-inline-block" href="/project-4">
+            <figure class="img-overlay mb-0">
+              <img src="images/dogma-landing.png" alt="" class="img-thumbnail" width="800" height="550">
+              <div class="img-hover">
+                <p class="img-text display-5" href="">View Project</p>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="fw-normal display-5">DOGMA Films</h2>
+          <p class="fw-light text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    
+      <!--yeahcommayeah-->
+      <div class="row justify-content-lg-between align-items-center gy-4 pb-5 pb-lg-6">
+        <div class="col-lg-6 order-lg-2">
+          <a class="d-inline-block" href="etch.html">
+            <figure class="img-overlay mb-0">
+              <img src="images/yeahcommayeah.png" alt="Interior Design landing page" class="img-thumbnail" width="800" height="550">
+              <div class="img-hover"> 
+                <p class="img-text display-5">View Project</p>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <div class="col-lg-5 order-lg-1">
+          <h2 class="fw-normal display-5">yeahcommayeah</h2>
+          <p class="fw-light text-light">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+
+      <!--Behind The Vows-->
+      <div class="row justify-content-lg-between align-items-center gy-4 pb-5 pb-lg-6">
+        <div class="col-lg-6">
+          <a class="d-inline-block" href="/project-4">
+            <figure class="img-overlay mb-0">
+              <img src="images/btv-landing.png" alt="" class="img-thumbnail" width="800" height="550">
+              <div class="img-hover">
+                <p class="img-text display-5">View Project</p>
+              </div>  
+            </figure>
+          </a>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="fw-normal display-5">Behind The Vows</h2>
+          <p class="fw-light text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+
+
+  
+    <!-- Call to action -->
+    <div class="text-bg-primary text-center">
+      <div class="container py-5 py-lg-6">
+        <h2>I help you to design your ideal website</h2>
+        <p class="lead mb-4">Excepteur sint occaecat cupidatat non proident, sunt in est laborum.</p>
+        <a class="btn btn-outline-dark" href="/contact">Contact</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="graphics/1x/logo.png" alt="Logo" style="height: 50px;">
+        </div>
+        <div class="col">
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="marathon.html">Marathon</a></li>
+            <li><a href="nut.html">The Nut</a></li>
+            <li><a href="winter.html">Winter Series</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
