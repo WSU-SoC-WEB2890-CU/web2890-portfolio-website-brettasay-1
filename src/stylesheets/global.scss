@@ -1,10 +1,16 @@
 @import "bootstrap/scss/bootstrap.scss";
+@import "color.scss";
 main {
-    background-color: #1C1C20;
+    background-color: $main-bg;
+}
+
+section {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
 }
 
 .layout {
-   background-color: #f1f1f1;
+   background-color: $section-bg;
 }
 
 .layout-etch {
@@ -13,13 +19,13 @@ main {
  h1 {
     font-family: 'ultra';
     font-weight: 700;
-    color: #FDF8FF;
+    color: $heading1;
  }
 
  h2 {
     font-family: 'ultra';
     font-weight: bold;
-    color: #AF0C41;
+    color: $heading2;
     padding-top: 2.5rem;
     padding-bottom: 1rem;
  }
@@ -39,11 +45,11 @@ main {
  }
 
  img {
-    background-color: #2B2B33;
+    background-color: $accent;
  }
 
  .navbar {
-    background-color: #2B2B33;
+    background-color: $accent;
     &a {
         font-family: 'plus jakarta sans';
         color:#fff !important;
@@ -54,37 +60,37 @@ main {
  }
 
  .nav-link {
-   color:#FDF8FF !important;
+   color:$heading1 !important;
    &:hover {
-      color:#AF0C41 !important;
+      color:$heading2 !important;
    }
  }
 
 
  .link-underline {
-   text-decoration: underline; /* Keeping the underline if you want it */
-   border: 2px solid #000; /* Example: 2px solid black border */
-   padding: 5px; /* Adds some space between the border and the text */
-   display: inline-block; /* Necessary for the border to wrap the text correctly */
-   margin: 5px; /* Optional: Adds some space around the link */
-   color: #fff; /* Text color */
-   background-color: #1C1C20; /* Background color */
+   text-decoration: underline; 
+   border: 2px solid #000; 
+   padding: 5px;
+   display: inline-block; 
+   margin: 5px; 
+   color: #fff; 
+   background-color: $main-bg; 
 }
 
-/* Style for hover effect (optional) */
+
 .link-underline:hover {
-   border-color: blue; /* Changes border color on hover */
-   color: blue; /* Changes text color on hover */
+   border-color: blue; 
+   color: blue; 
 }
 
 .img-overlay {
    position: relative;
-   display: inline-block; /* Keeps the figure block inline with its container */
+   display: inline-block; 
 }
 
 .img-overlay img {
-   display: block; /* Removes bottom spacing/margin under the image */
-   width: 100%; /* Makes image responsive */
+   display: block; 
+   width: 100%; 
    height: auto;
 }
 
@@ -94,27 +100,28 @@ main {
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-   color: white; /* Text color */
+   background: rgba(0, 0, 0, 0.5); 
+   color: white; 
    display: flex;
    align-items: center;
    justify-content: center;
-   opacity: 0; /* Hide by default */
-   transition: opacity 0.5s ease; /* Smooth transition for the overlay */
+   opacity: 0; 
+   transition: opacity 0.5s ease; 
 }
 
 .img-overlay:hover .img-hover {
-   opacity: 1; /* Show the overlay on hover */
+   opacity: 1; 
 }
 
 .img-text {
-   margin: 0; /* Adjust spacing as needed */
-   padding: 10px; /* Provides padding inside the overlay text */
-   text-align: center; /* Center the text */
+   margin: 0; 
+   padding: 10px; 
+   text-align: center; 
 }
 
 .img-thumbnail {
-   border: 0; /* Remove border if it's not needed */
-   border-radius: 0; /* Adjust or remove border-radius if desired */
+   border: 0; 
+   border-radius: 0; 
 }
+
 
