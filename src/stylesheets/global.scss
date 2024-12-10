@@ -1,0 +1,127 @@
+@import "bootstrap/scss/bootstrap.scss";
+@import "color.scss";
+main {
+    background-color: $main-bg;
+}
+
+section {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.layout {
+   background-color: $section-bg;
+}
+
+.layout-etch {
+   background-color: #fff;
+}
+ h1 {
+    font-family: 'ultra';
+    font-weight: 700;
+    color: $heading1;
+ }
+
+ h2 {
+    font-family: 'ultra';
+    font-weight: bold;
+    color: $heading2;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+ }
+
+ p {
+    font-family: 'plus jakarta sans';
+    font-size: 1.5rem;
+    color:#fff;
+ }
+
+ a {
+    font-family: 'plus jakarta sans';
+    color:#fff;
+    a:link {
+        color:#fff;
+    }
+ }
+
+ img {
+    background-color: $accent;
+ }
+
+ .navbar {
+    background-color: $accent;
+    &a {
+        font-family: 'plus jakarta sans';
+        color:#fff !important;
+        a:link {
+            color:#fff;
+        }
+     }
+ }
+
+ .nav-link {
+   color:$heading1 !important;
+   &:hover {
+      color:$heading2 !important;
+   }
+ }
+
+
+ .link-underline {
+   text-decoration: underline; 
+   border: 2px solid #000; 
+   padding: 5px;
+   display: inline-block; 
+   margin: 5px; 
+   color: #fff; 
+   background-color: $main-bg; 
+}
+
+
+.link-underline:hover {
+   border-color: blue; 
+   color: blue; 
+}
+
+.img-overlay {
+   position: relative;
+   display: inline-block; 
+}
+
+.img-overlay img {
+   display: block; 
+   width: 100%; 
+   height: auto;
+}
+
+.img-hover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5); 
+   color: white; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0; 
+   transition: opacity 0.5s ease; 
+}
+
+.img-overlay:hover .img-hover {
+   opacity: 1; 
+}
+
+.img-text {
+   margin: 0; 
+   padding: 10px; 
+   text-align: center; 
+}
+
+.img-thumbnail {
+   border: 0; 
+   border-radius: 0; 
+}
+
+
